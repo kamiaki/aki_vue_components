@@ -1,10 +1,14 @@
 // sumFunction 插件对应组件的名字
 import AkiButton1 from './components/AkiButton1';
 import AkiButton2 from './components/AkiButton2';
+import AkiButtonLeft from './components/AkiButtonLeft';
+import AkiButtonRight from './components/AkiButtonRight';
 
 const components = [
   AkiButton1,
-  AkiButton2
+  AkiButton2,
+  AkiButtonLeft,
+  AkiButtonRight
 ]
 
 // Vue.js 的插件应当有一个公开方法 install 。第一个参数是 Vue 构造器，第二个参数是一个可选的选项对象
@@ -21,4 +25,4 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-export default {install, AkiButton1, AkiButton2};
+export default {install, AkiButton1, AkiButton2, AkiButtonLeft,  AkiButtonRight};
