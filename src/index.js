@@ -25,4 +25,8 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
+// 全部引用
 export default {install, AkiButton1, AkiButton2, AkiButtonLeft,  AkiButtonRight};
+
+// 按需引入
+export {install, AkiButton1, AkiButton2, AkiButtonLeft,  AkiButtonRight};
