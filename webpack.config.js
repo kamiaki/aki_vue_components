@@ -8,8 +8,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    // filename: 'build.js', //自己测试的时候要用这个名字
-    filename: 'aki_vue_components.js', // 打包之后的名字 随便起
+    filename: 'build.js', //自己测试的时候要用这个名字
+    // filename: 'aki_vue_components.js', // 打包之后的名字 随便起
     library: 'aki_vue_components', // 使用require导入的时候使用的名字
     libraryTarget: 'umd', // 指定输出格式
     umdNamedDefine: true // 会对 UMD 的构建过程中的 AMD 模块进行命名。否则就使用匿名的 define
