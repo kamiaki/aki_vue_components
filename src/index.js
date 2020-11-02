@@ -3,18 +3,20 @@ import AkiButton1 from './components/AkiButton1';
 import AkiButton2 from './components/AkiButton2';
 import AkiButtonLeft from './components/AkiButtonLeft';
 import AkiButtonRight from './components/AkiButtonRight';
+import AkiSidebarButton1 from "./components/AkiSidebarButton1";
 
 const components = [
   AkiButton1,
   AkiButton2,
   AkiButtonLeft,
-  AkiButtonRight
+  AkiButtonRight,
+  AkiSidebarButton1
 ]
 
 // Vue.js 的插件应当有一个公开方法 install 。第一个参数是 Vue 构造器，第二个参数是一个可选的选项对象
 // 此处注意，组件需要添加name属性，代表注册的组件名称，也可以修改成其他的
 // 标签的方式引入
-const install = function(Vue, opts = {}) {
+const install = function (Vue, opts = {}) {
   components.forEach(component => {
     Vue.component(component.name, component);
   });
@@ -26,7 +28,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 // 全部引用
-export default {install, AkiButton1, AkiButton2, AkiButtonLeft,  AkiButtonRight};
+export default {install, AkiButton1, AkiButton2, AkiButtonLeft, AkiButtonRight, AkiSidebarButton1};
 
 // 按需引入
-export {install, AkiButton1, AkiButton2, AkiButtonLeft,  AkiButtonRight};
+export {install, AkiButton1, AkiButton2, AkiButtonLeft, AkiButtonRight, AkiSidebarButton1};
