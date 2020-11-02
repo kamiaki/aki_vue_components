@@ -1,7 +1,7 @@
 {
   "name": "aki_vue_components",
   "description": "这是王小秋同学的vue组件库 欢迎使用! 增加了侧边栏",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "kamiaki",
   "license": "MIT",
   "private": false,

@@ -16,7 +16,9 @@
     font-size: 10px" @bClick="showMsg(msg)">点击我
     </AkiButtonRight>
 
-    <AkiSidebarButton1 style="width: 150px;height: 50px;" @bClick="showMsg(msg)">
+    <AkiSidebarButton1
+      :circleStyle="{width: '30px',height: '30px',bottom: '-0px',left: '-8px'}"
+      style="width: 200px;height: 50px;" @bClick="showMsg(msg)">
       <div style="font-size: 20px;text-align: center;line-height: 40px;color: #000dff">点击我</div>
     </AkiSidebarButton1>
   </div>
@@ -45,7 +47,7 @@
     },
     methods: {
       showMsg(msg) {
-        alert(msg)
+        console.info(msg)
       }
     }
   }

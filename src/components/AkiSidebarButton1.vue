@@ -2,7 +2,7 @@
   <div>
     <!--按钮-->
     <div class="btn" @click="buttonClick">
-      <div :class="classObject" style=" width: 20%; height: 60%;bottom: 0;left: -10%;"></div>
+      <div :class="classObject" :style="circleStyle"></div>
       <!--内容-->
       <slot></slot>
     </div>
@@ -12,6 +12,7 @@
 <script>
   export default {
     name: "Aki-Sidebar-Button-1",
+    props: ['circleStyle'],
     data: function () {
       return {
         classObject: {
