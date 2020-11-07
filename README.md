@@ -53,6 +53,6 @@ Aki-Sidebar-Button-1
 | ------------ | ------------------------------------------------------------ |
 | :circleStyle | 旋转的圆设置{width: '40px',height: '40px',bottom: '-15px',left: '-10px'} |
 
-
+![](https://raw.githubusercontent.com/kamiaki/aki_vue_components/master/remarks/btn.png)
 
 ### 2. 开发中...
