@@ -1,11 +1,11 @@
 {
   "name": "aki_vue_components",
   "description": "这是王小秋同学的vue组件库 欢迎使用! 增加了侧边栏",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "kamiaki",
   "license": "MIT",
   "private": false,
-  "main": "dist/aki_vue_components.js",
+  "main": "dist/build.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
