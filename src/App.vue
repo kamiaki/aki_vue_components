@@ -16,11 +16,15 @@
     font-size: 10px" @bClick="showMsg(msg)">点击我
     </AkiButtonRight>
 
+    <!--例用循环来拿到index 染色-->
     <AkiSidebarButton1
+      v-for="(obj,index) in btnlist" :key="index"
+      :clicked="index === clickIndex"
       :circleStyle="{width: '30px',height: '30px',bottom: '-0px',left: '-8px'}"
-      style="width: 200px;height: 50px;" @bClick="showMsg(msg)">
-      <div style="font-size: 20px;text-align: center;line-height: 40px;color: #000dff">点击我</div>
+      style="width: 200px;height: 50px;" @bClick="showMsg(msg),clickBtn(index)">
+      <div style="font-size: 20px;text-align: center;line-height: 40px;color: #000dff">{{obj.text}}</div>
     </AkiSidebarButton1>
+
   </div>
 </template>
 
@@ -30,6 +34,10 @@
   import AkiButtonLeft from "./components/AkiButtonLeft";
   import AkiButtonRight from "./components/AkiButtonRight";
   import AkiSidebarButton1 from "./components/AkiSidebarButton1";
+
+  const bl = [
+    {text: '点击我1', url: 'url1'}, {text: '点击我2', url: 'url2'}, {text: '点击我3', url: 'url3'}
+  ]
 
   export default {
     name: 'app',
@@ -42,10 +50,15 @@
     },
     data() {
       return {
+        clickIndex: undefined,
+        btnlist: bl,
         msg: 'Welcome to Your Vue.js App'
       }
     },
     methods: {
+      clickBtn(index) {
+        this.clickIndex = index
+      },
       showMsg(msg) {
         console.info(msg)
       }
